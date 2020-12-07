@@ -1,0 +1,186 @@
+/* // Source: https://theoutline.com/post/5970/unconventional-wisdom-emotional-readiness-is-bullshit */
+@import url("https://use.typekit.net/mfg0brt.css");
+@import "compass/css3";
+body {
+  background-color: rgb(222, 238, 213);
+}
+/* main{
+  background-image: url("blob.svg");
+} */
+.section-heading {
+  font-family: operetta-18, serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  /* border-bottom: 1px solid; */
+}
+
+.type-heading-1 {
+  font-family: operetta-18, serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  /* border-bottom: px dotted; */
+  /* background-color:  rgb(209, 190, 241); */
+  background-image: linear-gradient(360deg,rgba(209, 190, 241, 0.733), #e7f3a400 ,rgba(203, 243, 194, 0.5));
+  border-radius: 2%;
+  font-size: 5rem;
+  margin: 2 2 2rem;
+  /* margin-right: 2rem; */
+  color: rgb(49, 33, 28);
+}
+.type-heading-2 {
+  font-family: operetta-12, serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  
+  font-size: 2rem;
+  margin: 2 2 3rem;
+  margin-right: 2rem;
+  color: rgb(68, 41, 33);
+}
+.type-heading-3 {
+  font-family: operetta-32, serif;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  font-size: 4rem;
+  margin: 0 0 3rem;
+  color: rgb(105, 75, 70);
+}
+/*  */
+/* //overflow hidden */
+.type-body-1 {
+  /* text-transform: lowercase; */
+  /* border-bottom: 1px solid; */
+  font-family: operetta-18, serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: capitalize;
+  text-align: left;
+text-align-last: inherit;
+  font-family: operetta-32, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.5rem;
+  /* margin: 0 0 3rem; */
+  margin-left: 9%;
+  color: rgb(49, 33, 28);
+}
+.type-body-2 {
+  background-image: linear-gradient(rgba(209, 190, 241, 0.253), rgba(203, 243, 194, 0.281));
+  
+  padding-bottom: 5%;
+  border-radius: 15px 50px 30px 20px;
+ 
+  /* text-transform: capitalize; */
+  font-family: operetta-8, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 2rem;
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 20%;
+overflow-wrap: break-word;
+  /* left:50%; */
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+  /* margin: 3 0 3rem; */
+  left: 2rem;
+  color: rgb(49, 33, 28);
+}
+.type-link {
+  font-family: operetta-8, serif;
+  font-weight: 400;
+  font-style: normal;
+
+  color: rgb(61, 48, 29);
+  text-decoration: none;
+}
+a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='rgb(177, 135, 245)' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+}
+.color {
+  color: rgb(49, 33, 28);
+}
+.color-primary {
+  color: rgb(255, 252, 237);
+}
+.color-secondary {
+  color: rgb(127, 161, 107);
+}
+.color-accent {
+  color: rgb(209, 190, 241);
+}
+.iconblob1{
+  font-family: operetta-32, serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.5rem;
+  position: fixed;
+  z-index: 10;
+  top:5%;
+  right:0%;
+width: 15%;
+color: rgb(105, 75, 70);
+}
+.iconblob2{
+  font-family: operetta-32, serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.5rem;
+  position: fixed;
+  z-index: 10;
+  top:5%;
+  right:10%;
+width: 15%;
+color: rgb(105, 75, 70);
+
+}
+.blob1{
+  position: absolute;
+  z-index: -20;
+  top:-30%;
+  left:60%;
+width: 90%;
+overflow-x: hidden;
+overflow-y: hidden;
+}
+/* .blob1:hover{
+  transition:transform 0.3s;
+  transform:rotate(45deg);
+} */
+.blob2{
+  position: absolute;
+  z-index: -20;
+  top:30%;
+  left:-10%;
+width: 90%;
+overflow-x: hidden;
+overflow-y:hidden;
+}
+.button-primary {
+  font-family: operetta-32, serif;
+  font-weight: 400;
+  border-radius: 0.3rem;
+  border: 1px solid;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left-color: transparent;
+}
+.button-secondary {
+  font-family: operetta-32, serif;
+  font-weight: 400;
+  border-radius: 0.3rem;
+  border: 1px solid;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left-color: transparent;
+}
+
