@@ -64,8 +64,7 @@ var seventhValue = document.getElementById("pics");
   var Airtable = require('airtable');
 var base = new Airtable({apiKey: 'key3kQAZHgzH6SAix'}).base('app7PiRH6J2bC4tS9');
 
-base('Table 1').find('recak5uIHLNpI8Odc', function(err, record) {
- 
+base('Table 1').find('recON81kF8ukWo6H7', function(err, record) {
     var firstValue = document.getElementById("name");
     firstValue.innerHTML = record.get("Name");
     // console.log(record.get('Name'));
@@ -97,45 +96,3 @@ base('Table 1').find('recak5uIHLNpI8Odc', function(err, record) {
     if (err) { console.error(err); return; }
     console.log('Retrieved', record.id);
 });
-
-
-drag(document.getElementById("drag"));
-drag(document.getElementById("drag1"));
-
-
-function drag(elmnt) {
- 
-  var position1 = 0, position2 = 0, position3 = 0, position4 = 0;
-  if (document.getElementById(elmnt.id)) {
-   elmnt.onmousedown = dragImage;
-  } 
-
-  function dragImage(click) {
-    click = click || window.event;
-    click.preventDefault();
-    position3 = click.clientX;
-    position4 = click.clientY;
-    document.onmouseup = lockPosition;
-    document.onmousemove = newPosition;
-  }
-
-  function newPosition(click) {
-    click = click || window.event;
-    click.preventDefault();
-    position1 = position3 - click.clientX;
-    position2 = position4 - click.clientY;
-    position3 = click.clientX;
-    position4 = click.clientY;
-    elmnt.style.top = (elmnt.offsetTop - position2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - position1) + "px";
-  }
-
-  function lockPosition() {
-    document.onmouseup = null;
-    document.onmousemove = null;
-  }
-  
-  
-  
-  
-}
