@@ -98,9 +98,14 @@ base('Table 1').find('recak5uIHLNpI8Odc', function(err, record) {
     console.log('Retrieved', record.id);
 });
 
-
 drag(document.getElementById("drag"));
 drag(document.getElementById("drag1"));
+drag(document.getElementById("drag2"));
+drag(document.getElementById("drag3"));
+drag(document.getElementById("drag4"));
+drag(document.getElementById("drag5"));
+drag(document.getElementById("drag6"));
+drag(document.getElementById("drag7"));
 
 
 function drag(elmnt) {

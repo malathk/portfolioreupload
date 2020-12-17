@@ -28,13 +28,13 @@ body {
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
-  padding-top: 25%;
+  padding-top: 5%;
   padding-left:0% ; 
   padding-right: 0%;
   padding-bottom: 25%;
    position: absolute;
   z-index: 50;
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
   overflow-x: hidden;
   overflow-x: hidden;
@@ -114,6 +114,7 @@ text-align-last: inherit;
 .type-body-2 {
   /* background-image: linear-gradient(rgba(209, 190, 241, 0.253), rgba(203, 243, 194, 0.281)); */
   
+  
   padding-bottom: 5%;
   border-radius: 15px 50px 30px 20px;
  
@@ -149,6 +150,11 @@ overflow-wrap: break-word;
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
+}
+a{
+  color:inherit;
+  color: rgb(61, 48, 29);
+
 }
 a:visited,a:hover {
   color: rgb(61, 48, 29);
